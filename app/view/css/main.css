@@ -1,0 +1,122 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 0%);
+}
+.gameBoard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .gameboy {
+      width: 400px;
+      height: 650px;
+      border: 1px solid #FFF;
+      border-radius: 15px;
+      border-bottom-right-radius: 70px;
+      position: relative;
+    }
+        .gameboy__screen {
+          width: 85%;
+          height: 45%;
+          background-color: hsl(0, 0%, 100%);
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 27px;
+          border-radius: 10px;
+          border-bottom-right-radius: 45px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+            .gameboy__screen__LED {
+              width: 10px;
+              height: 10px;
+              border-radius: 100%;
+              background-color: hsl(0, 100%, 50%);
+              position: absolute;
+              left: 5%;
+              top: 30%;
+            }
+            .gameboy__screen__display {
+              width: 250px;
+              height: 225px;
+              background-color: hsl(0, 0%, 0%);
+              border-radius: 10px;
+            }
+        .gameboy__arrowkey {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 10%;
+          bottom: 25%;
+          /*background-color: hsl(0, 0%, 100%);*/
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+            .arrowKey {
+              width: 30px;
+              height: 30px;
+              /*border: 1px solid #000;*/
+              background-color: #FFF
+            }
+            /*.gameboy__arrowkey__center {
+              width: 30px;
+              height: 30px;
+              border: 1px solid #000;
+            }*/
+            .gameboy__arrowkey__up {
+              position: absolute;
+              top: 5px;
+            }
+            .gameboy__arrowkey__down {
+              position: absolute;
+              bottom: 5px;
+            }
+            .gameboy__arrowkey__left {
+              position: absolute;
+              left: 5px;
+            }
+            .gameboy__arrowkey__right {
+              position: absolute;
+              right: 5px;
+            }
+        .gameboy__button {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          background-color: #FFF;
+        }
+            .gameboyBtnA {
+              position: absolute;
+              right: 10%;
+              bottom: 32%;
+            }
+            .gameboyBtnB {
+              position: absolute;
+              right: 27%;
+              bottom: 28%;
+            }
+        .gameboy__settingButton {
+          width: 25%;
+          position: absolute;
+          left: 37.5%;
+          bottom: 10%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+            .settingButton {
+              width: 35px;
+              height: 10px;
+              border-radius: 30px;
+              background-color: #FFF;
+            }
+            .gameboy__settingButton__A {}
+            .gameboy__settingButton__B {}
