@@ -4,28 +4,48 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="app/view/css/normalize.css"/>
     <link rel="stylesheet" href="app/view/css/main.css"/>
+    <link rel="stylesheet" href="app/view/css/gameboy.css"/>
   </head>
   <body>
     <section class="gameBoard">
       <div class="gameboy">
         <div class="gameboy__screen">
-          <div class="gameboy__screen__LED"></div>
-          <div class="gameboy__screen__display"></div>
+          <div class="gameboy__screen__LED" id="screenLED"></div>
+          <div class="gameboy__screen__display" id="gameDisplay">
+            <section class="gameListPage" id="gameListPage" tabindex="0">
+              <div class="aimer" id="aimer"></div>
+              <div class="gameItem gameItem--first" id="Super Mario">Super Mario</div>
+              <div class="gameItem" id="Dragon Ball">Dragon Ball</div>
+              <div class="gameItem" id="StarCraft">StarCraft</div>
+              <div class="gameItem" id="Diablo">Diablo</div>
+              <div class="gameItem" id="NBA 2K17">NBA 2K17</div>
+              <div class="gameItem" id="Pokemon GO">Pokemon GO</div>
+            </section>
+            <section class="transitionPage">
+              <!-- transition animation -->
+              <div class="transitionAni"></div>
+            </section>
+            <video src="app/view/video/dragonball.mp4" type="video/mp4" class="dragonBallVideo" id="dragonBallVideo"></video>
+            <!-- game canvas -->
+            <!-- <canvas class="gameboy__screen__display__canvas" width="250" height="225" id="gameCanvas"></canvas> -->
+          </div>
         </div>
         <div class="gameboy__arrowkey">
           <div class="arrowKey gameboy__arrowkey__center"></div>
-          <div class="arrowKey gameboy__arrowkey__up"></div>
-          <div class="arrowKey gameboy__arrowkey__down"></div>
-          <div class="arrowKey gameboy__arrowkey__left"></div>
-          <div class="arrowKey gameboy__arrowkey__right"></div>
+          <div class="arrowKey gameboy__arrowkey__up" id="keyUp"></div>
+          <div class="arrowKey gameboy__arrowkey__down" id="keyDown"></div>
+          <div class="arrowKey gameboy__arrowkey__left" id="keyLeft"></div>
+          <div class="arrowKey gameboy__arrowkey__right" id="keyRight"></div>
         </div>
-        <div class="gameboy__button gameboyBtnA"></div>
-        <div class="gameboy__button gameboyBtnB"></div>
+        <div class="gameboy__button gameboyBtnA" id="gameboyBtnA"></div>
+        <div class="gameboy__button gameboyBtnB" id="gameboyBtnB"></div>
         <div class="gameboy__settingButton">
-          <div class="settingButton gameboy__settingButton__A"></div>
-          <div class="settingButton gameboy__settingButton__B"></div>
+          <div class="settingButton gameboy__settingButton__A" id="settingBtnA"></div>
+          <div class="settingButton gameboy__settingButton__B" id="settingBtnB"></div>
         </div>
       </div>
     </section>
+    <script src="app/script/js/gameboy.js"></script>
+    <!-- <script src="app/script/js/main.js"></script> -->
   </body>
 </html>
