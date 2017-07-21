@@ -14,22 +14,10 @@ var Gameboy = (function(window, document) {
   var gameListAry = ["Super Mario", "Dragon Ball", "StarCraft", "Diablo", "NBA 2K17", "Pokemon GO"];
   var index = 0;
   var direction = null;
-  // var gameloop = null;
-  // var count = 0;
 
   // render game interface
   var startGameboy = function() {
-    // renderModule.drawSnake();
-    // renderModule.createFood();
-    // renderModule.paint();
-
     keyControl();
-    // gameloop = setInterval( function() {
-    //   count++;
-    //   if(count <= 2) {
-    //     renderModule.paint();
-    //   }
-    // }, 100);
   };
 
   // key controller
