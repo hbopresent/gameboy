@@ -45,12 +45,12 @@ var Gameboy = (function(window, document) {
           setTriggerStyle(keycode);
           moveAimer(direction);
           break;
-        case "Numpad1":
+        case "KeyA":
           setTriggerStyle(keycode);
           aimer.style.animation = "animation2 ease-out 0.3s forwards";
           setTimeout(playVideo, 400);
           break;
-        case "Numpad2":
+        case "KeyB":
           setTriggerStyle(keycode);
           break;
         case "KeyZ":
@@ -107,10 +107,10 @@ var Gameboy = (function(window, document) {
       case "ArrowDown":
         keyDown.classList.add("triggerStyle");
         break;
-      case "Numpad1":
+      case "KeyA":
         gameboyBtnA.classList.add("triggerStyle");
         break;
-      case "Numpad2":
+      case "KeyB":
         gameboyBtnB.classList.add("triggerStyle");
         break;
       case "KeyZ":
